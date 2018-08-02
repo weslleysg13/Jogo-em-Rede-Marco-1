@@ -1,0 +1,38 @@
+@startuml
+
+class Jogador{
+       private String nome;
+       private String pernaqueChuta;
+
+       Jogador(String nome, String pernaqueChuta)
+       getNome()
+       setNome(String nome)
+       getPernaqueChuta()
+       setPernaqueChuta(String pernaqueChuta)
+}
+
+class DisputadePenalty{
+        private int chute;
+        private int pulo;
+        private String resultado;
+        private int numGols;
+        private int numDefesas;
+        private int rodadaPar;
+        private int rodadaImpar;
+
+        DisputadePenalty(int chute, int pulo)
+        getChute()
+        getPulo()
+        getResultado()
+        setResultado()
+        getNumGols()
+        setNumGols()
+        getNumDefesas()
+        setNumdefesas()
+        getRodadaPar()
+        setRodadaPar(int rodada)
+        getRodadaImpar()
+        setRodadaImpar(int rodada)
+
+}
+@enduml

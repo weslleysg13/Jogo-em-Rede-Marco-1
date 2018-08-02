@@ -1,0 +1,20 @@
+@startuml
+:Jogador:
+:DisputadePenalty:
+
+Jogador --> (Definir Nome)
+Jogador --> (Definir Perna que Chuta)
+Jogador --> (Jogar)
+
+DisputadePenalty --> (Iniciar Novo Jogo)
+DisputadePenalty --> (Testar condiçoes)
+DisputadePenalty --> (Mostrar Placar)
+DisputadePenalty --> (Mostrar na tela acoes)
+
+note "Chutar ou Pular" as acao
+note "Direita ou Esquerda" as perna
+note "Goooool! ou Defendeeeeu! Entre outras" as resultado
+(Jogar)..acao
+(Definir Perna que Chuta)..perna
+(Mostrar na tela acoes)..resultado
+@enduml
